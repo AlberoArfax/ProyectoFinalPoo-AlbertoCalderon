@@ -1,0 +1,8 @@
+Hola profesor, en este archivo encontrará las instrucciones a seguir para ejecutar de manera correcta el proyecto:
+
+1. Crear la base de datos ejecutando el script "baseDeDatosScript".
+2. Añadir la carpeta de POOProyectoFinal al workspace de su IDE que utiliza para Java.
+3. Añadir el conector para la base de datos "mysql-connector-java-8.0.22" al proyecto como una libreria externa.
+4. Ejecutar el archivo main del proyecto.
+
+El cómo usar el proyecto se encontrará dentro del documento pdf del proyecto.
