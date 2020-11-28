@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `iglesia` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `iglesia`;
 -- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: iglesia
@@ -27,7 +29,7 @@ CREATE TABLE `acceso_usuarios` (
   `nombre-usuario` varchar(45) NOT NULL,
   `contraseña-usuario` varchar(45) NOT NULL,
   PRIMARY KEY (`id-accesoUsuarios`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,6 +38,7 @@ CREATE TABLE `acceso_usuarios` (
 
 LOCK TABLES `acceso_usuarios` WRITE;
 /*!40000 ALTER TABLE `acceso_usuarios` DISABLE KEYS */;
+INSERT INTO `acceso_usuarios` VALUES (1,' Alberto','12345');
 /*!40000 ALTER TABLE `acceso_usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,7 +130,7 @@ CREATE TABLE `ofrendas_regulares` (
   `monto-total` double NOT NULL,
   `servicio` varchar(45) NOT NULL,
   PRIMARY KEY (`id-ofrendasRegulares`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -136,6 +139,7 @@ CREATE TABLE `ofrendas_regulares` (
 
 LOCK TABLES `ofrendas_regulares` WRITE;
 /*!40000 ALTER TABLE `ofrendas_regulares` DISABLE KEYS */;
+INSERT INTO `ofrendas_regulares` VALUES (1,'2020-12-09',300.5,'tarde');
 /*!40000 ALTER TABLE `ofrendas_regulares` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,4 +178,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-27 13:21:33
+-- Dump completed on 2020-11-27 23:22:31
