@@ -3,9 +3,10 @@ Hola profesor, en este archivo encontrará las instrucciones a seguir para ejecu
 
 1. Crear la base de datos ejecutando el script "baseDeDatosScript", es importante ejecutar el script en workbench en el servidor 3306.
 2. Crear un nuevo proyecto de java en su IDE de preferencia y en la carpeta src agregar los archivos .java que están en dentro de POOProyectoFInal -> src.
-3. Una vez agregados los archivos, dirijase al archivo conexion.java y modifique la variable clave que tiene el valor "hola1234" y coloque la contraseña que utiliza para entrar a su servidor.
-4. En caso de que su usuario no sea root, modifique de igual manera la variable usuario que tiene como valor "root".
-5. Ejecutar el archivo main del proyecto.
+3. Agregar el conector de mysql proporcionado en la carpeta al proyecto de java como una libreria externa.
+4. Una vez agregados los archivos, dirijase al archivo conexion.java y modifique la variable clave que tiene el valor "hola1234" y coloque la contraseña que utiliza para entrar a su servidor.
+5. En caso de que su usuario no sea root, modifique de igual manera la variable usuario que tiene como valor "root".
+6. Ejecutar el archivo main del proyecto.
 
 El cómo usar el proyecto se encontrará dentro del documento pdf del proyecto.
 
